@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+//import FuncComp from "./components/FuncComp";
+// import ClassComp from "./components/ClassComp";
+// import StateExp from "./components/StateExp"
+// import Parent from "./components/Parent";
+import ConRender from "./components/ConRender";
+// import ListRender from "./components/ListRender";
+import FormHandle from "./components/FormHandle";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( <div>
+      <Navbar />
+      {/* <FuncComp name="Kunal"/> */}
+      {/* <ClassComp name="Patel" type="Class"/> */}
+      {/* <StateExp/> */}
+      {/* <Parent/> */}
+      <ConRender/>
+      {/* <ListRender/> */}
+      <FormHandle/>
     </div>
   );
 }
